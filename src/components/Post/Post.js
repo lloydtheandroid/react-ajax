@@ -9,6 +9,6 @@ const post = (props) => (
             <div className="Author">Author: {props.author}</div>
         </div>
     </article>
-);
+)
 
 export default post;
