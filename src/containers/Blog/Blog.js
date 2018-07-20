@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 //import axios from 'axios'
 import axios from '../../axios';
 
-import Post from '../../components/Post/Post';
 import './Blog.css';
 
 
@@ -57,9 +56,6 @@ class Blog extends Component {
                         </ul>
                     </nav>
                 </header>
-                <section className="Posts">
-                   {posts}
-                </section>
             </div>
         );
     }
