@@ -9,18 +9,18 @@ class NewPost extends Component {
         content: '',
         author: 'Max'
     }
-    componentDidMount() {
-        console.log(this.props)
+
+    componentDidMount () {
+        console.log(this.props);
     }
 
-    //method
     postDataHandler = () => {
-        const postData = {
+        const data = {
             title: this.state.title,
             body: this.state.content,
             author: this.state.author
         };
-        axios.post('posts/', postData)
+        axios.post('/posts', data)
             .then(response => {
                 console.log(response);
             });
